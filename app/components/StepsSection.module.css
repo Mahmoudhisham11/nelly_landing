@@ -1,0 +1,135 @@
+.section {
+  padding: 90px 0;
+  background-color: var(--surface-soft);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.headerWrapper {
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto 50px auto;
+}
+
+.title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.35;
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.stepCard {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 32px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stepCard:hover {
+  background: var(--surface-hover);
+  border-color: var(--border-pink-glow);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.stepTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.iconBox {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.stepCard:hover .iconBox {
+  transform: scale(1.08);
+}
+
+.stepNum {
+  font-family: var(--font-latin);
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #f0e4ec;
+  line-height: 1;
+  transition: color 0.25s ease;
+}
+
+.stepCard:hover .stepNum {
+  color: rgba(219, 39, 119, 0.25);
+}
+
+.stepTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.stepDesc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.stepFooter {
+  margin-top: 24px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(240, 228, 236, 0.7);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+  .stepsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 1.85rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .stepCard {
+    padding: 24px 20px;
+  }
+
+  .title {
+    font-size: 1.55rem;
+  }
+}

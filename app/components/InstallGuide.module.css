@@ -1,0 +1,239 @@
+.section {
+  padding: 90px 0;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.headerWrapper {
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto 50px auto;
+}
+
+.title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.35;
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.layoutGrid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.stepsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stepCard {
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  background-color: var(--surface-soft);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition: all 0.25s ease;
+}
+
+.stepCard:hover {
+  border-color: var(--brand-pink-mid);
+  transform: translateY(-2px);
+}
+
+.stepCardHighlight {
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  background-color: #fffdfb;
+  border: 1.5px solid rgba(217, 119, 6, 0.35);
+  box-shadow: 0 6px 20px rgba(217, 119, 6, 0.08);
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition: all 0.25s ease;
+}
+
+.stepIconBox {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stepHeaderRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+.stepBadge {
+  font-family: var(--font-latin);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--brand-pink);
+  background-color: rgba(219, 39, 119, 0.1);
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.stepTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.stepDesc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+/* Right Column: Visual SmartScreen */
+.smartScreenWrapper {
+  background-color: var(--surface-soft);
+  padding: 26px;
+  border-radius: var(--radius-2xl);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+}
+
+.smartScreenHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: var(--accent-gold);
+}
+
+.smartScreenHeaderTitle {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.mockWindowsBox {
+  background-color: #0078d4;
+  color: #ffffff;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 120, 212, 0.25);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.85rem;
+}
+
+.mockWinHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mockWinTitle {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.mockWinDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.mockWinDesc {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  font-size: 0.78rem;
+  margin-bottom: 16px;
+}
+
+.mockActionList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mockActionStep1 {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mockActionStep2 {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mockBtnRun {
+  background: #ffffff;
+  color: #0078d4;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.guaranteeNote {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-subtle);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.6;
+}
+
+@media (max-width: 960px) {
+  .layoutGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 1.85rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .stepCard, .stepCardHighlight {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 1.55rem;
+  }
+}

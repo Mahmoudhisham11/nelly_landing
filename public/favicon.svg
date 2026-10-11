@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#db2777" />
+      <stop offset="50%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#db2777" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#ffffff" />
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#roseGrad)" filter="url(#glow)" />
+  <!-- Letter N Luxury Monogram -->
+  <path d="M22 43V21L36 38.5V21H42V43L28 25.5V43H22Z" fill="#ffffff" />
+  <!-- Sparkle Accent -->
+  <path d="M44 15L45.5 19L49.5 20.5L45.5 22L44 26L42.5 22L38.5 20.5L42.5 19L44 15Z" fill="#fde68a" />
+</svg>
